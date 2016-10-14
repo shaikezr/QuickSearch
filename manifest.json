@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "QuickSearch",
+	"description": "Quick searches",
+	"version": "1",
+	"omnibox": {
+    	"keyword": ";q"
+	},
+
+	"background": {
+    	"scripts": ["js/background.js"]
+    },
+
+    "browser_action": {
+    	"default_popup": "resources/popup.html"
+    },
+
+	"permissions": [
+		"activeTab",
+		"storage",
+		"tabs"
+	],
+
+	"icons": {
+		"128": "img/icon.png"
+	}
+}
